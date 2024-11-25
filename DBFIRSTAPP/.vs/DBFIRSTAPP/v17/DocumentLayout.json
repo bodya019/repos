@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\DBFIRSTAPP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD0CEA8-080E-4EF8-A0F8-5358AC3EA79E}|DBFIRSTAPP\\DBFIRSTAPP.csproj|c:\\users\\user\\source\\repos\\dbfirstapp\\dbfirstapp\\appsetting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FFD0CEA8-080E-4EF8-A0F8-5358AC3EA79E}|DBFIRSTAPP\\DBFIRSTAPP.csproj|solutionrelative:dbfirstapp\\appsetting.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD0CEA8-080E-4EF8-A0F8-5358AC3EA79E}|DBFIRSTAPP\\DBFIRSTAPP.csproj|c:\\users\\user\\source\\repos\\dbfirstapp\\dbfirstapp\\mydatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFD0CEA8-080E-4EF8-A0F8-5358AC3EA79E}|DBFIRSTAPP\\DBFIRSTAPP.csproj|solutionrelative:dbfirstapp\\mydatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD0CEA8-080E-4EF8-A0F8-5358AC3EA79E}|DBFIRSTAPP\\DBFIRSTAPP.csproj|c:\\users\\user\\source\\repos\\dbfirstapp\\dbfirstapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFD0CEA8-080E-4EF8-A0F8-5358AC3EA79E}|DBFIRSTAPP\\DBFIRSTAPP.csproj|solutionrelative:dbfirstapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD0CEA8-080E-4EF8-A0F8-5358AC3EA79E}|DBFIRSTAPP\\DBFIRSTAPP.csproj|c:\\users\\user\\source\\repos\\dbfirstapp\\dbfirstapp\\appbasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFD0CEA8-080E-4EF8-A0F8-5358AC3EA79E}|DBFIRSTAPP\\DBFIRSTAPP.csproj|solutionrelative:dbfirstapp\\appbasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppBaseCOntext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DBFIRSTAPP\\DBFIRSTAPP\\AppBaseCOntext.cs",
+              "RelativeDocumentMoniker": "DBFIRSTAPP\\AppBaseCOntext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DBFIRSTAPP\\DBFIRSTAPP\\AppBaseCOntext.cs",
+              "RelativeToolTip": "DBFIRSTAPP\\AppBaseCOntext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T15:27:56.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appSetting.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DBFIRSTAPP\\DBFIRSTAPP\\appSetting.json",
+              "RelativeDocumentMoniker": "DBFIRSTAPP\\appSetting.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DBFIRSTAPP\\DBFIRSTAPP\\appSetting.json",
+              "RelativeToolTip": "DBFIRSTAPP\\appSetting.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-22T15:19:55.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyDataBaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DBFIRSTAPP\\DBFIRSTAPP\\MyDataBaseContext.cs",
+              "RelativeDocumentMoniker": "DBFIRSTAPP\\MyDataBaseContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DBFIRSTAPP\\DBFIRSTAPP\\MyDataBaseContext.cs",
+              "RelativeToolTip": "DBFIRSTAPP\\MyDataBaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T09:42:01.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\DBFIRSTAPP\\DBFIRSTAPP\\Program.cs",
+              "RelativeDocumentMoniker": "DBFIRSTAPP\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\DBFIRSTAPP\\DBFIRSTAPP\\Program.cs",
+              "RelativeToolTip": "DBFIRSTAPP\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T09:34:25.783Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

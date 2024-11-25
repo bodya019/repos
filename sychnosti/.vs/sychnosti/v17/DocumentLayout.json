@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\sychnosti\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8747D0E0-08AA-4588-BD6F-48961198A643}|sychnosti\\sychnosti.csproj|c:\\users\\user\\source\\repos\\sychnosti\\sychnosti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8747D0E0-08AA-4588-BD6F-48961198A643}|sychnosti\\sychnosti.csproj|solutionrelative:sychnosti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8747D0E0-08AA-4588-BD6F-48961198A643}|sychnosti\\sychnosti.csproj|c:\\users\\user\\source\\repos\\sychnosti\\sychnosti\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8747D0E0-08AA-4588-BD6F-48961198A643}|sychnosti\\sychnosti.csproj|solutionrelative:sychnosti\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8747D0E0-08AA-4588-BD6F-48961198A643}|sychnosti\\sychnosti.csproj|c:\\users\\user\\source\\repos\\sychnosti\\sychnosti\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8747D0E0-08AA-4588-BD6F-48961198A643}|sychnosti\\sychnosti.csproj|solutionrelative:sychnosti\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8747D0E0-08AA-4588-BD6F-48961198A643}|sychnosti\\sychnosti.csproj|c:\\users\\user\\source\\repos\\sychnosti\\sychnosti\\newdatabase||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{8747D0E0-08AA-4588-BD6F-48961198A643}|sychnosti\\sychnosti.csproj|solutionrelative:sychnosti\\newdatabase||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8747D0E0-08AA-4588-BD6F-48961198A643}|sychnosti\\sychnosti.csproj|c:\\users\\user\\source\\repos\\sychnosti\\sychnosti\\migrations\\20241125160258_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8747D0E0-08AA-4588-BD6F-48961198A643}|sychnosti\\sychnosti.csproj|solutionrelative:sychnosti\\migrations\\20241125160258_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NewDataBase",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\sychnosti\\sychnosti\\NewDataBase",
+              "RelativeDocumentMoniker": "sychnosti\\NewDataBase",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\sychnosti\\sychnosti\\NewDataBase",
+              "RelativeToolTip": "sychnosti\\NewDataBase",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-25T16:04:06.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241125160258_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\sychnosti\\sychnosti\\Migrations\\20241125160258_InitialCreate.cs",
+              "RelativeDocumentMoniker": "sychnosti\\Migrations\\20241125160258_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\sychnosti\\sychnosti\\Migrations\\20241125160258_InitialCreate.cs",
+              "RelativeToolTip": "sychnosti\\Migrations\\20241125160258_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T16:02:59.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\sychnosti\\sychnosti\\User.cs",
+              "RelativeDocumentMoniker": "sychnosti\\User.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\sychnosti\\sychnosti\\User.cs",
+              "RelativeToolTip": "sychnosti\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T15:45:04.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\sychnosti\\sychnosti\\MyContext.cs",
+              "RelativeDocumentMoniker": "sychnosti\\MyContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\sychnosti\\sychnosti\\MyContext.cs",
+              "RelativeToolTip": "sychnosti\\MyContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T15:44:35.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\sychnosti\\sychnosti\\Program.cs",
+              "RelativeDocumentMoniker": "sychnosti\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\sychnosti\\sychnosti\\Program.cs",
+              "RelativeToolTip": "sychnosti\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T15:40:47.438Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
