@@ -6,15 +6,17 @@ using System.Data;
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        string identicalCubes4 = "1,2,3,4,5,6 1,2,3,4,5,6 1,2,3,4,5,6 1,2,3,4,5,6";
-        string cubes3 = "2,2,4,4,9,9 1,1,6,6,8,8 3,3,5,5,7,7";
+       
 
+        if (args.Length == 36 || args.Length == 48 )
+        {         
+        
         (byte[] key, string hmacResult) = GenerateAndComputeHMAC();
 
         int numberOfCubes = GetNumberOfCubesFromUser();
-        int[,] cubeNumbers = HandleCubesInput(numberOfCubes, cubes3, identicalCubes4);
+        int[,] cubeNumbers = HandleCubesInput(numberOfCubes, args);
 
         Print2DArray(cubeNumbers);
 
@@ -23,12 +25,12 @@ class Program
             $"HMAC (SHA3-256): {hmacResult}");
 
         Console.WriteLine("Enter the command:\r\n" +
-                "0 - 0\r\n" +
+                "0 - 0\r\n"+ 
                 "1 - 1\r\n" +
                 "X - exit\r\n" +
                 "? - help");
 
-        int step1User = Convert.ToInt32(HandleUserInput(numberOfCubes));
+        int step1User = Convert.ToInt32(HandleUserInput(numberOfCubes, args));
         Console.WriteLine($"Your selection:{step1User}");
         RandomGeneratorBase step1PC = new FirstStep();
         int PcSelection = step1PC.Generate();
@@ -37,8 +39,8 @@ class Program
         int[] removedRowPC = new int[6];
         int[] removedRowUser = new int[6];        
 
-        (int pc1, int user1) =  GameForDifferentCubes(cubeNumbers, PcSelection, step1User, ref removedRowPC, ref removedRowUser);
-        (int pc2, int user2) = GameForDifferentCubes(cubeNumbers, PcSelection, step1User, ref removedRowPC, ref removedRowUser);
+        (int pc1, int user1) =  GameForDifferentCubes(cubeNumbers, PcSelection, step1User, ref removedRowPC, ref removedRowUser, args);
+        (int pc2, int user2) = GameForDifferentCubes(cubeNumbers, PcSelection, step1User, ref removedRowPC, ref removedRowUser, args);
         int computerResult = pc1 + pc2;
         int userResult = user1 + user2;
 
@@ -47,8 +49,14 @@ class Program
             $"For computer = {computerResult}.");
 
         WhoWin(computerResult, userResult);
+        }
+        else
+        {
+            Console.WriteLine("Please provide the dice configuration as a command-line argument.\nExample: \"1,2,3,4,5,6 2,2,4,4,9,9 3,3,5,5,7,7\"");
+            return;
+        }
     }
-    static (int a, int b) GameForDifferentCubes(int[,] cubeNumbers, int PcSelection, int step1User, ref int[] removedRowPC, ref int[] removedRowUser)
+    static (int a, int b) GameForDifferentCubes(int[,] cubeNumbers, int PcSelection, int step1User, ref int[] removedRowPC, ref int[] removedRowUser, string[] args)
     {
         if (PcSelection != step1User)
         {
@@ -67,7 +75,7 @@ class Program
             Console.WriteLine("X - exit");
             Console.WriteLine("? - help");
 
-            int userSelection = Convert.ToInt32(HandleUserInput(cubeNumbers.GetLength(0)));
+            int userSelection = Convert.ToInt32(HandleUserInput(cubeNumbers.GetLength(0), args));
 
             removedRowUser = RemoveRowByIndex(ref cubeNumbers, userSelection);
             Console.WriteLine($"Your selection: {userSelection}");
@@ -75,10 +83,10 @@ class Program
             Console.Write(string.Join(",", removedRowUser));
             Console.WriteLine("] dice.");
             Console.WriteLine("It's time for my throw.");
-            int computerResult = removedRowPC[Throw()];
+            int computerResult = removedRowPC[Throw(args)];
             Console.WriteLine($"My throw is {computerResult}.");
             Console.WriteLine("It's time for your throw.");
-            int userResult = removedRowUser[Throw()];
+            int userResult = removedRowUser[Throw(args)];
             Console.WriteLine($"Your throw is {userResult}.");
             return (computerResult, userResult);
         }
@@ -94,7 +102,7 @@ class Program
             Console.WriteLine("X - exit");
             Console.WriteLine("? - help");
 
-            int userSelection = Convert.ToInt32(HandleUserInput(cubeNumbers.GetLength(0)));
+            int userSelection = Convert.ToInt32(HandleUserInput(cubeNumbers.GetLength(0),args));
 
             removedRowUser = RemoveRowByIndex(ref cubeNumbers, userSelection);
             Console.WriteLine($"Your selection: {userSelection}");
@@ -107,10 +115,10 @@ class Program
             Console.Write(string.Join(",", randomRowFromRemaining));
             Console.WriteLine("] dice.");
             Console.WriteLine("It's time for your throw.");
-            int userResult = removedRowUser[Throw()];
+            int userResult = removedRowUser[Throw(args)];
             Console.WriteLine($"Your throw is {userResult}.");
 
-            int computerResult = randomRowFromRemaining[Throw()];
+            int computerResult = randomRowFromRemaining[Throw(args)];
             Console.WriteLine($"My throw is {computerResult}.");
             return (computerResult, userResult);
         }
@@ -131,7 +139,7 @@ class Program
             Console.WriteLine($"Draw ({user} = {pc})!");
         }
     }
-    static int Throw()
+    static int Throw(string[] args)
     {
         RandomGeneratorBase randomFOrThrow = new ComputerNumber();
 
@@ -144,7 +152,7 @@ class Program
         Console.WriteLine("X - exit");
         Console.WriteLine("? - help");
 
-        int userSelection = Convert.ToInt32(HandleUserInput(6));
+        int userSelection = Convert.ToInt32(HandleUserInput(6, args));
         Console.WriteLine($"My number is {randomValue} (KEY={BitConverter.ToString(key).Replace("-", "").ToLower()}).");
 
         int result = (randomValue + userSelection) % 6;
@@ -207,7 +215,7 @@ class Program
         return removedRow;
     }
 
-    static string HandleUserInput(int numberOfCubes)
+    static string HandleUserInput(int numberOfCubes, string[] args)
     {
         while (true)
         {
@@ -234,9 +242,8 @@ class Program
                     break;
 
                 case "?":
-                    string identicalCubes4 = "1,2,3,4,5,6 1,2,3,4,5,6 1,2,3,4,5,6 1,2,3,4,5,6";
-                    string cubes3 = "2,2,4,4,9,9 1,1,6,6,8,8 3,3,5,5,7,7";
-                    int[,] dice = HandleCubesInput(numberOfCubes, cubes3, identicalCubes4);
+                    
+                    int[,] dice = HandleCubesInput(numberOfCubes, args);
                     double[,] probabilities = CalculateProbabilities(dice);
                     Console.WriteLine("The first step in the game is to determine who will make the first move, while choosing 0 or 1." +
                         " Guessing the number of the computer, if the user guessed, then he goes first, if not, then the computer goes first." +
@@ -274,22 +281,22 @@ class Program
             }
         }
     }
-    static int[,] HandleCubesInput(int numberOfCubes, string cubes3, string identicalCubes4)
+    static int[,] HandleCubesInput(int numberOfCubes, string[] args)
     {
         if (numberOfCubes == 3)
         {
-            return ProcessStringTo2DArray(cubes3);
+            return ProcessStringTo2DArray(args[0]);
         }
         else if (numberOfCubes == 4)
         {
-            return ProcessStringTo2DArray(identicalCubes4);
+            return ProcessStringTo2DArray(args[0]);
         }
         else
         {
             Console.WriteLine("ERROR: Enter 3 cubes or 4 cubes");
             Console.WriteLine("Please try again.");
             numberOfCubes = Convert.ToInt32(Console.ReadLine());
-            return HandleCubesInput(numberOfCubes, cubes3, identicalCubes4);
+            return HandleCubesInput(numberOfCubes, args);
         }
     }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rzWA7NUyHRA=",
+  "dgSpecHash": "AeqNMnLh52I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\OneDrive\\Рабочий стол\\Itransition\\3 task\\task3\\task3\\task3.csproj",
+  "projectFilePath": "C:\\Users\\User\\source\\repos\\Itransition\\3 task\\task3\\task3\\task3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sha3.net\\2.0.0\\sha3.net.2.0.0.nupkg.sha512"
